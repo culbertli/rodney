@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/base.config.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/assets/common/bootstrap/css/bootstrap.min.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/assets/common/lib/js/isScroll.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/brand.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/brand_base.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/brand_case.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/contact.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/cooperate.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/form_base.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/ie.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/news_base.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/news_detail.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/news_list.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/product_base.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/product_detail.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/product_list.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/sample.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/variables.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/css/wealth_base.less" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/index.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/brand.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/brand_case.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/contact.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/cooperate.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/main.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/news_detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/news_list.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/product_detail.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/product_list.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/js/sample.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/brand.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/brand_case.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/contact.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/cooperate.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/news_detail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/news_list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/product_detail.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/product_list.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/sample.html" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/public/js/base.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/public/js/ie.js" charset="UTF-8" />
+  </component>
+</project>

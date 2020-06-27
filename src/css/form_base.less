@@ -1,0 +1,15 @@
+@import "variables";
+form{
+  textarea{resize: none;}
+  .input-group,.form-group{margin-top: 15px;input{border-radius: 4px;height:52px;}}
+  .input-group{width:100%;}
+  .submit_wrapper{
+    text-align: center;
+    input[type=submit]{background-color: @page_theme_l;color:@cw;width:15%;display: inline-block;border:none;.trans5;height:40px;}
+    input[type=submit]:hover{background-color: @page_theme;}
+    @media screen and (max-width:767px){
+      input[type=submit]{width:100%;}
+    }
+  }
+  input[type=submit],textarea{border-radius: 0 !important;}
+}

@@ -1,0 +1,58 @@
+@import "product_base";
+.product_detail{
+  a.link_more{width:160px;}
+  .content_bg{background-color: @cw;overflow: hidden;}
+  .product_main{padding:20px 15px;margin-bottom: 20px;
+    .img_wrapper{width:100%;img{width:100%;}}
+    .product_info{
+      .text_wrapper{margin:30px 0;
+        font-size: @f_text;color:@cb1;line-height: @f_title;
+      }
+      .btn_wrapper{text-align: center;
+        a.link_more_solid{margin-right: 25px;}
+      }
+    }
+  }
+  @media (min-width: 992px){
+    .product_main>div.row,.product_main>div{display: flex;align-items:stretch;
+      .product_info{display: flex;flex-direction:column; justify-content:space-between;
+        .text_wrapper{margin:0;}
+        .btn_wrapper{text-align: left;}
+      }
+    }
+  }
+  .product_detail_pic{padding:50px 0 35px;text-align: center;
+    .d_title{font-size: @f_title1;color:@cb1;}
+    .d_sub_title{font-size: @f_text;color:@cb2;text-transform: uppercase;position: relative;}
+    .d_sub_title:after{content: '';position: absolute;width:1px;height:25px;background-color: @cb1;bottom: -45px;
+      left:50%;
+    }
+    .detail_wrapper{display: flex;justify-content:center;margin-top: 55px;height:500px;overflow: hidden;
+      .detail_content{max-width: 750px;
+        img{max-width: 100%;}
+      }
+      .detail_show_more{width:100%;position: absolute;bottom:0;left:0;text-align: center;color: @cw;font-size: @f_text;
+          height:80px;line-height: 80px;background: linear-gradient(transparent,#fff);cursor: pointer;
+      }
+    }
+    .detail_show{height:auto;.detail_show_more{display: none;}}
+  }
+  .operate_wrapper_outer{display: flex;justify-content:center;margin-top: 30px;
+    .operate_wrapper{max-width: 750px;text-align: center;.btn_wrapper{margin-bottom: 30px;}
+      .page_go{display: flex;justify-content:center;@p_w:40px;
+        .link_more{display: inline-block;width:@p_w;height:@p_w;border-radius: 50%;
+          display: flex;justify-content:center;align-items:center;
+        }
+        .link_more.act{color:@page_theme;border-color: @page_theme;}
+        .link_more.act:hover{color:@cw;}
+        div:first-child{a{transform: rotate(180deg);}margin-right: 30px;}
+      }
+    }
+    @media (min-width: 992px){
+      .operate_wrapper>.row{
+        .page_go{justify-content:flex-end;}
+        .btn_wrapper:last-child{text-align: left;}
+      }
+    }
+  }
+}

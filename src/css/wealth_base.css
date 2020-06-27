@@ -1,0 +1,160 @@
+/**基础参数 开始**/
+.trans5 {
+  transition: all ease 0.5s;
+}
+/**基础参数 结束**/
+/*wealth 开始*/
+.wealth {
+  overflow: hidden;
+  padding: 70px 0;
+  background: url(../assets/images/wealth_bg.jpg) center no-repeat;
+  background-attachment: fixed;
+  background-size: 100% auto;
+  position: relative;
+}
+.wealth .wealth_title,
+.wealth .wealth_content {
+  position: relative;
+  color: #fff;
+}
+.wealth .wealth_title {
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 70px;
+}
+.wealth .wealth_title h2 {
+  font-size: 30px;
+}
+.wealth .wealth_title h3 {
+  font-size: 18px;
+}
+.wealth .wealth_content {
+  display: grid;
+  display: -ms-grid;
+  grid-gap: 2px;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  -ms-grid-columns: 1fr 5fr;
+  -ms-grid-rows: auto auto auto auto auto auto auto;
+}
+.wealth .wealth_content li {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+.wealth .wealth_content li:nth-child(odd) {
+  justify-content: center;
+  -ms-grid-column: 1;
+}
+.wealth .wealth_content li:nth-child(even) {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: justify;
+  -ms-grid-column: 2;
+}
+@media screen and (max-width: 992px) {
+  .wealth .wealth_content {
+    grid-template-columns: 2fr 4fr;
+    -ms-grid-columns: 2fr 4fr;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wealth {
+    background-attachment: scroll;
+    background-size: auto 100% !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  .wealth_content {
+    grid-template-columns: 2fr 4fr;
+    -ms-grid-columns: 2fr 4fr;
+  }
+}
+.wealth_rear {
+  padding: 40px 0 30px;
+  box-shadow: 0 5px 15px #999;
+}
+.wealth_rear .wealth_process {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+.wealth_rear .wealth_process li {
+  display: flex;
+  align-items: center;
+  border: 1px solid #333;
+  width: 98px;
+  height: 98px;
+  border-radius: 50%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.wealth_rear .wealth_process li div.w_wrapper {
+  display: inline-block;
+  text-align: center;
+  transition: all 1s;
+}
+.wealth_rear .wealth_process li div.w_wrapper .w_icon > span {
+  font-size: 30px;
+}
+.wealth_rear .wealth_process li div.w_wrapper .w_text {
+  font-size: 14px;
+}
+.wealth_rear .wealth_process li div.w_wrapper .w_text,
+.wealth_rear .wealth_process li div.w_wrapper .w_icon > span {
+  transition: all 1s;
+  color: #333;
+}
+.wealth_rear .wealth_process li:last-child .w_icon span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: url(../assets/images/logo_b.png) no-repeat center;
+  background-size: 100%;
+}
+@media screen and (max-width: 767px) {
+  .wealth_rear .wealth_process li:last-child {
+    margin-right: 15%;
+  }
+  .wealth_rear .wealth_process li:nth-child(4) {
+    margin-left: 15%;
+  }
+}
+.wealth_rear .wealth_process li:hover {
+  border-color: #fff;
+}
+.wealth_rear .wealth_process li:hover div.w_wrapper .w_text,
+.wealth_rear .wealth_process li:hover div.w_wrapper .w_icon > span {
+  color: #fff;
+}
+.wealth_rear .wealth_process li:last-child:hover .w_icon span {
+  background: url(../assets/images/logo_w.png) no-repeat center;
+  background-size: 100%;
+}
+.wealth_rear .join_btn > .link_more {
+  border-radius: 50px;
+  padding: 12px 40px;
+  background-color: #bf9551;
+  color: #fff;
+  border-color: #bf9551;
+}
+@media screen and (min-width: 767px) {
+  .wealth_rear .wealth_process {
+    padding: 0 10%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .wealth_rear .wealth_process {
+    padding: 0 15%;
+  }
+  .wealth_rear .wealth_process li div.w_wrapper .w_icon > span {
+    font-size: 30px;
+  }
+  .wealth_rear .wealth_process li div.w_wrapper .w_text {
+    font-size: 14px;
+  }
+}
+/*wealth 结束*/

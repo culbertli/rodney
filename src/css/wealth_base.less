@@ -1,0 +1,67 @@
+@import "variables";
+/*wealth 开始*/
+.wealth{overflow: hidden; padding:70px 0;background: url(../assets/images/wealth_bg.jpg) center no-repeat;background-attachment: fixed;
+  background-size: 100% auto;position: relative;
+  .wealth_title,.wealth_content{position: relative;color:@cw;}
+  .wealth_title{text-align: center;letter-spacing: 2px;margin-bottom: 70px;
+    h2{font-size: @f_title;}
+    h3{font-size: @f_title2;}
+  }
+  .wealth_content{display: grid;display:-ms-grid; grid-gap: 2px;
+    grid-template-columns: 1fr 5fr;grid-template-rows: auto auto auto auto auto auto auto;
+    -ms-grid-columns:1fr 5fr;-ms-grid-rows: auto auto auto auto auto auto auto;
+    li{background-color: rgba(0,0,0,.5);padding-top:25px;padding-bottom: 25px;display: flex;align-items:center;}
+    li:nth-child(odd){justify-content: center;-ms-grid-column: 1;}
+    li:nth-child(even){padding-left: 20px;padding-right: 20px;text-align: justify;-ms-grid-column: 2;}
+  }
+  @media screen and (max-width:992px){
+    .wealth_content{grid-template-columns: 2fr 4fr;-ms-grid-columns: 2fr 4fr;}
+  }
+}
+@media screen and (max-width:992px){
+  .wealth{background-attachment: scroll;background-size:auto 100% !important;}
+}
+@media screen and (max-width:992px){
+  .wealth_content{grid-template-columns: 2fr 4fr;-ms-grid-columns: 2fr 4fr;}
+}
+.wealth_rear{padding:40px 0 30px;box-shadow: 0 5px 15px @cb3;
+  .wealth_process{display: flex;justify-content:space-around;flex-wrap:wrap;margin-bottom: 35px;
+    li{display: flex;align-items:center;border: 1px solid @cb1;@w:98px;width:@w;height:@w;border-radius: 50%;justify-content:center;
+      margin-bottom: 20px;
+      div.w_wrapper{display: inline-block; text-align: center;transition: all 1s;
+        .w_icon>span{font-size: @f_title;}.w_text{font-size: @f_text1;}
+        .w_text,.w_icon>span{transition: all 1s;color:@cb1;}
+      }
+    }
+    li:last-child{@h:40px;
+      .w_icon{ span{display: inline-block; width:@h;height:@h;background: url(../assets/images/logo_b.png) no-repeat center;background-size: 100%;}}
+    }
+    @media screen and (max-width:767px){
+      li:last-child{margin-right: 15%;}
+      li:nth-child(4){margin-left: 15%;}
+    }
+    li:hover{border-color: @cw;
+      div.w_wrapper{
+        .w_text,.w_icon>span{color: @cw;}
+      }
+    }
+    li:last-child:hover{
+      .w_icon{span{background: url(../assets/images/logo_w.png) no-repeat center;background-size: 100%;}}
+    }
+  }
+  .join_btn>.link_more{border-radius: 50px;padding:12px 40px;background-color: @page_theme_l;color:@cw;border-color: @page_theme_l; }
+  @media screen and (min-width:767px){
+    .wealth_process{padding:0 10%;}
+  }
+  @media screen and (min-width:992px){
+    .wealth_process{
+      padding:0 15%;
+      li{
+        div.w_wrapper{
+          .w_icon>span{font-size: @f_title;}.w_text{font-size: @f_text1;}
+        }
+      }
+    }
+  }
+}
+/*wealth 结束*/

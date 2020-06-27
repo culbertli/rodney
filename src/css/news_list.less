@@ -1,0 +1,62 @@
+@import "news_base";
+@a:11px;
+.news_list{background-color: @cb5;position: relative;.block_main;
+  b{font-weight: normal;}
+  .news_item{padding:0 10px;.trans5;
+    .news_wrapper{
+      .img_box{padding:10px 20px;}
+      .date_box{padding-right: 20px;
+        span{font-size: @f_title1;color:@cb1;
+          i{font-style: normal;font-size: @f_text;color:@cb3;}
+        }
+      }
+      img{width: 100%;}
+      .text_box{flex-direction:row;
+        .text_wrapper{overflow: hidden;}
+        h2{font-size: @f_title1;color:@cb1;margin-bottom: 10px;}
+        .text_desc{font-size: @f_text;color:@cb2;.ellipsis_for_2;height:0;.trans5;}
+      }
+    }
+    @media screen and (max-width:992px){
+      .news_item{border:1px solid @cb3;}
+      .news_wrapper{
+        .text_box{.text_wrapper{margin-top:8%;} h2{.ellipsis_for_2;margin-top: 0;font-size: @f_title1;}.text_desc{margin-bottom: 10px;}}
+      }
+    }
+    @media screen and (max-width:767px){
+      .news_wrapper{
+        .text_box{.text_wrapper{margin-top:0;} }
+        .text_box,.date_box{padding:0 20px;}
+      }
+    }
+    @media screen and (min-width:992px){
+      .news_wrapper{display: flex;align-items:stretch;
+        .text_box,.date_box{display: flex;align-items:center;}
+        .text_box{padding:0 60px;
+          h2{font-size: @f_title;color:@cb1;margin-bottom: 20px;.ellipsis_for_1;}
+        }
+        .date_box{border-right: 1px solid @cline;}
+        .date_box:after{content: '';width:@a;height:@a;border:1px solid @page_theme;border-radius: @a;
+          position: absolute;right:-6px;
+        }
+        .date_box{flex-direction:row-reverse;position: relative;
+          padding-right: 20px;
+          span{font-size: 45px;color:@cb1;position: relative;
+            i{position: absolute;right:5px;top:-50%;font-style: normal;font-size: 20px;color:@cb3;}
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width:992px){
+    .news_item{margin-bottom: 10px;padding-bottom: 20px;border-bottom: 1px solid @cb4;}
+  }
+  .news_item:hover{box-shadow: 0 0 15px @cline;
+    .news_wrapper{
+      .text_box{
+        .text_desc{height:45px;}
+      }
+    }
+  }
+}
+.page_index{margin-top: 50px;}

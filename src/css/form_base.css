@@ -1,0 +1,44 @@
+/**基础参数 开始**/
+.trans5 {
+  transition: all ease 0.5s;
+}
+/**基础参数 结束**/
+form textarea {
+  resize: none;
+}
+form .input-group,
+form .form-group {
+  margin-top: 15px;
+}
+form .input-group input,
+form .form-group input {
+  border-radius: 4px;
+  height: 52px;
+}
+form .input-group {
+  width: 100%;
+}
+form .submit_wrapper {
+  text-align: center;
+}
+form .submit_wrapper input[type=submit] {
+  background-color: #bf9551;
+  color: #fff;
+  width: 15%;
+  display: inline-block;
+  border: none;
+  transition: all ease 0.5s;
+  height: 40px;
+}
+form .submit_wrapper input[type=submit]:hover {
+  background-color: #aa7d35;
+}
+@media screen and (max-width: 767px) {
+  form .submit_wrapper input[type=submit] {
+    width: 100%;
+  }
+}
+form input[type=submit],
+form textarea {
+  border-radius: 0 !important;
+}
